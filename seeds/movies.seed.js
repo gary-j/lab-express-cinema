@@ -98,6 +98,7 @@ const movies = [
     },
   ];
   
+// The script that will be run to actually seed the database (feel free to refer to the previous lesson)
 Movie.deleteMany().then(
     ()=> Movie.create(movies)
 ).then(
@@ -110,5 +111,4 @@ Movie.deleteMany().then(
       .catch(err => console.log(`An error occurred while creating movies from the DB: ${err}`));
     
 
-// The script that will be run to actually seed the database (feel free to refer to the previous lesson)
   
